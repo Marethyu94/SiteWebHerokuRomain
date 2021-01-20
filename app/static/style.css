@@ -1,0 +1,162 @@
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+.navig {
+	background-image: url('header_bg.jpg');
+	padding-top: 40px !important;
+	padding-bottom: 40px; 
+}
+
+.entete {
+	max-width: 1000px;
+}
+
+.name_enterprise {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.btn-success {
+	width: 170px;
+	height: 70px;
+	box-shadow: -5px 2px 5px 5px rgba(0, 0, 0, .6);
+}
+
+.btn-success2 {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+  height: 40px;
+  width: 170px;
+}
+
+.corps {
+	background-image: url('login_bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding-top: 200px;
+
+}
+
+.form_login {
+	width: 390px;
+	padding: 20px;
+	margin: 0 auto;
+	border: 3mm ridge rgba(238, 187, 38, .7);
+	text-align: center;
+}
+
+.btn-primary {
+	width: 300px;
+	height: 40px;
+}
+
+.mess_bvn {
+	width: 600px;
+	padding: 20px;
+	margin: 0 auto;
+	border: 3mm solid rgba(238, 187, 38, .7);
+	text-align: center;
+}
+
+.btn_photo {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	border-width: 0px;
+	padding: 0px;
+
+}
+
+.btn_photo2 {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding: 0px;
+}
+
+.dropdown-toggle::after {
+	content: none; 
+}
+
+.onglets {
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+	margin-top: 35px;
+	margin-right: 20px;
+}
+
+.nav-item {
+	padding: 5px;
+}
+
+.form_infoperso {
+	width: 600px;
+	padding: 20px;
+	margin: 0 auto;
+	border: 3mm ridge rgba(238, 187, 38, .7);
+
+}
+
+.form_info {
+	margin-left: 100px;
+}
+.custom-select {
+	width: 300px;
+}
+
+.form_infoperso form input {
+	width: 300px;
+}
+
+.form_infoperso p {
+	font-weight: bold;
+}
+.form_infoperso label {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.crsl_lastresult {
+	width: 1200px;
+	height: 700px;
+	margin: 0 auto;
+	border: 3mm ridge rgba(238, 187, 38, .7);
+}
+
+.carousel-indicators li {
+	background-color: black;
+}
+
+.row {
+	display: flex;
+}
+
+.choix_pdf {
+	width: 200px;
+	margin-left: 10px;
+	background-color: black;
+	opacity: 40%;
+}
+
+.btn-perso {
+	background-color: grey;
+	width: 170px;
+}
+
+.embed_pdf {
+	background-color: rgb(0,0,0,0.4);
+}
+
+.col-4 {
+	padding-left: 0;
+}

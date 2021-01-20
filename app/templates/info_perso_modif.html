@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>EPISAlliance</title>
+	<meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link href="{{url_for('static', filename = 'style.css')}}" rel="stylesheet">
+
+	<script src="https://kit.fontawesome.com/e7709ce36d.js" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</head>
+<body>
+	<section id="title">
+      <nav class="navig navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"/>
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="{{ url_for('main.accueil')}}" class="navbar-brand name_enterprise"><img src="../static/site_logo.png"></a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link onglets" href="#" id="dropdownMenuButton2" role="button" data-toggle="dropdown" aria-expanded="false">Analyses médicales</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+               <li><a href="{{ url_for('main.lastresult')}}" type="button" class="dropdown-item">Vos dernières analyses</a></li>
+                <li><a href="{{ url_for('main.allresult')}}" type="button" class="dropdown-item">Toutes vos analyses</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link onglets" href="{{ url_for('main.infoperso')}}">Informations personnelles</a>
+            </li>
+            <li class="dropleft">
+              <a class="nav-link btn_photo" id="dropdownMenuButton" role="button" data-toggle="dropdown" aria-expanded="false"><img src="data:;base64,{{ image }}" class="btn_photo2"/></a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a href="{{ url_for('auth.logout')}}" type="button" class="btn btn-danger dropdown-item"><img src="../static/log-out.svg"/> Se déconnecter</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  </section>
+    <div class="corps" style="padding-top: 50px;">
+      <div class="form_infoperso">
+        <h4>Informations personnelles :</h4>
+        <form class="form_info" method="POST" action="/maj-info" enctype="multipart/form-data">
+        <ul style="list-style-type: none;">
+          <li>
+            <label for="fichier">Photo d'identité :</label>
+          </li>
+          <li>
+            <input type="file" class="form-control-file" id="fichier" name="picidentity">
+          </li>
+          <li>
+            <label for="nom">Nom :</label>
+          </li>
+          <li>
+            <input type="text" id="nom" name="lastname">
+          </li>
+          <li>
+            <label for="prenom">Prénom :</label>
+          </li>
+          <li>
+            <input type="text" id="prenom" name="firstname">
+          </li>
+          <li>
+            <label for="age">Âge :</label>
+          </li>
+          <li>
+            <select class="custom-select" id="age" name="age">
+              <option selected>Choose...</option>
+            </select>
+          </li>
+          <li>
+            <label for="adresse1">Adresse 1 :</label>
+          </li>
+          <li>
+            <input type="text" name="adresse1">
+          </li>
+          <li>
+            <label for="adresse2">Adresse 2 :</label>
+          </li>
+          <li>
+            <input type="text" name="adresse2">
+          </li>
+          <li>
+            <label for="taille">Taille : (en cm)</label>
+          </li>
+          <li>
+            <select class="custom-select" id="taille" name="taille">
+              <option selected>Choose...</option>
+            </select>
+          </li>
+          <li>
+            <label for="taille">Poids : (en kg)</label>
+          </li>
+          <li>
+            <select class="custom-select" id="poids" name="poids">
+              <option selected>Choose...</option>
+            </select>
+          </li>
+          <li>
+            <label for="taille">Allergies :</label>
+          </li>
+          <li>
+            <select class="custom-select" id="allergie" name="allergie">
+              <option selected>Choose...</option>
+              <option>Oui</option>
+              <option>Non</option>
+            </select>
+          </li>
+          <li>
+            <label for="taille">Maladie(s) chronique(s) :</label>
+          </li>
+          <li>
+            <select class="custom-select" id="maladie" name="malchr">
+              <option selected>Choose...</option>
+              <option>Oui</option>
+              <option>Non</option>
+            </select>
+          </li>
+        </ul>
+        <button type="submit" class="btn btn-primary">Enregistrer</button>
+      </form>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      select = document.getElementById('age');
+      options = []
+      for (i=0; i<=99; i++) {
+        options.push(i);
+      }
+      options.forEach(function(element,key) {
+        select[key+1] = new Option(element,key);
+      });
+
+    </script>
+    <script type="text/javascript">
+      select = document.getElementById('taille');
+      options = []
+      for (i=0; i<=230; i++) {
+        options.push(i);
+      }
+      options.forEach(function(element,key) {
+        select[key+1] = new Option(element,key);
+      });
+    </script>
+    <script type="text/javascript">
+      select = document.getElementById('poids');
+      options = []
+      for (i=0; i<=600; i++) {
+        options.push(i);
+      }
+      options.forEach(function(element,key) {
+        select[key+1] = new Option(element,key);
+      });
+    </script>
+</body>
+</html>
