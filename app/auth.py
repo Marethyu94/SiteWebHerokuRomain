@@ -10,7 +10,7 @@ auth = Blueprint('auth', __name__)
 
 def convertToBinaryData():
     #Convert digital data to binary format
-    with open('app\\static\\pic_identite_anonyme.png', 'rb') as file:
+    with open('app/static/pic_identite_anonyme.png', 'rb') as file:
         blobData = file.read()
     return blobData
 
