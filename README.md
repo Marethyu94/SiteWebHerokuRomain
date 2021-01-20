@@ -7,8 +7,8 @@ Le nom du centre de recherche médicale que j'ai inventé s'appelle EPISAlliance
 Vous pouvez sur ce site regarder vos résultats médicaux, renseigner des informations sur vous pour aider au diagnostic, vous choisir une photo de profil pour personnaliser un peu votre compte.
 
 Voici deux profils pour vous connecter avec des exemples de résultats médicaux :
-compte 1 : identifiant : john   mot de passe : vitrygtr
 
+compte 1 : identifiant : john   mot de passe : vitrygtr
 compte 2 : identifiant : admin  mot de passe : admin
 
 Vous pouvez créer un nouveau compte et voir qu'il n'aura aucun résultat d'analyse médicale.
