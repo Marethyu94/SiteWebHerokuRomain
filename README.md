@@ -9,6 +9,7 @@ Vous pouvez sur ce site regarder vos résultats médicaux, renseigner des inform
 Voici deux profils pour vous connecter avec des exemples de résultats médicaux :
 
 compte 1 : identifiant : john   mot de passe : vitrygtr
+
 compte 2 : identifiant : admin  mot de passe : admin
 
 Vous pouvez créer un nouveau compte et voir qu'il n'aura aucun résultat d'analyse médicale.
