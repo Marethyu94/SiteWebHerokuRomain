@@ -8,9 +8,9 @@ Vous pouvez sur ce site regarder vos résultats médicaux, renseigner des inform
 
 Voici deux profils pour vous connecter avec des exemples de résultats médicaux :
 
-compte 1 : identifiant : john   mot de passe : vitrygtr
+compte 1 : identifiant : john   ,mot de passe : vitrygtr
 
-compte 2 : identifiant : admin  mot de passe : admin
+compte 2 : identifiant : admin  ,mot de passe : admin
 
 Vous pouvez créer un nouveau compte et voir qu'il n'aura aucun résultat d'analyse médicale.
 Enfin, vous pouvez tester le système d'authentification du site. Vous verrez que si vous n'êtes pas connecté, vous n'aurez pas accès aux pages du site même en tapant l'url à la main. Cependant, n'oubliez pas de vous déconnecter du site quand vous avez terminé en appuyant sur votre photo de profil et en appuyant sur se déconnecter car sinon votre compte restera connecté même si votre ordinateur est éteint.
